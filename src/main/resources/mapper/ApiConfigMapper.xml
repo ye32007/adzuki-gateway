@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.adzuki.gateway.mapper.ApiConfigMapper">
+  <resultMap id="BaseResultMap" type="com.adzuki.gateway.entity.ApiConfig">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="api" jdbcType="VARCHAR" property="api" />
+    <result column="version" jdbcType="VARCHAR" property="version" />
+    <result column="dubbo_service_name" jdbcType="VARCHAR" property="dubboServiceName" />
+    <result column="dubbo_service_version" jdbcType="VARCHAR" property="dubboServiceVersion" />
+    <result column="dubbo_service_method" jdbcType="VARCHAR" property="dubboServiceMethod" />
+    <result column="param_class" jdbcType="VARCHAR" property="paramClass" />
+    <result column="need_login" jdbcType="INTEGER" property="needLogin" />
+    <result column="owner" jdbcType="VARCHAR" property="owner" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+</mapper>

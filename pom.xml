@@ -48,6 +48,30 @@
 	            <groupId>org.springframework</groupId>
 	            <artifactId>spring-context-support</artifactId>
 	        </dependency>
+	        <dependency>
+	            <groupId>org.springframework.boot</groupId>
+	            <artifactId>spring-boot-starter-data-redis</artifactId>
+	        </dependency>
+	        <!-- mybatis -->
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter</artifactId>
+				<version>${mybatis.spring.version}</version>
+			</dependency>
+			<dependency>
+		        <groupId>tk.mybatis</groupId>
+		        <artifactId>mapper-spring-boot-starter</artifactId>
+		        <version>2.0.3</version>
+		    </dependency>
+		    <dependency>
+			    <groupId>com.github.pagehelper</groupId>
+			    <artifactId>pagehelper-spring-boot-starter</artifactId>
+			    <version>1.2.5</version>
+			</dependency>
+		    <dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-commons</artifactId>
+			</dependency>
 	        <!-- dubbo -->
 			<dependency>
 		        <groupId>com.alibaba.spring.boot</groupId>
@@ -75,31 +99,6 @@
 			    <version>0.10</version>
 			</dependency>
 			
-			<!-- mybatis -->
-			<dependency>
-				<groupId>org.mybatis.spring.boot</groupId>
-				<artifactId>mybatis-spring-boot-starter</artifactId>
-				<version>${mybatis.spring.version}</version>
-			</dependency>
-			<dependency>
-		        <groupId>tk.mybatis</groupId>
-		        <artifactId>mapper-spring-boot-starter</artifactId>
-		        <version>RELEASE</version>
-		    </dependency>
-		    <dependency>
-			    <groupId>com.github.pagehelper</groupId>
-			    <artifactId>pagehelper-spring-boot-starter</artifactId>
-			    <version>RELEASE</version>
-			</dependency>
-		    <dependency>
-				<groupId>org.springframework.data</groupId>
-				<artifactId>spring-data-commons</artifactId>
-			</dependency>
-			<dependency>
-	            <groupId>org.springframework</groupId>
-	            <artifactId>spring-context-support</artifactId>
-            </dependency>
-		    
 		    <!-- for db -->
 			<dependency>
 	            <groupId>com.zaxxer</groupId>
@@ -134,6 +133,11 @@
 			<dependency>
 			    <groupId>commons-codec</groupId>
 			    <artifactId>commons-codec</artifactId>
+			</dependency>
+			<dependency>
+			    <groupId>com.google.guava</groupId>
+			    <artifactId>guava</artifactId>
+			    <version>25.1-jre</version>
 			</dependency>
 			
 			<!-- test -->
